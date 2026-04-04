@@ -2,3 +2,5 @@
 nama : amara
 
 nim : 2025573010042
+
+TI 1C
