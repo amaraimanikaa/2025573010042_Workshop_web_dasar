@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Diri - Card Style</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #748093; 
+            color: #726767; 
+        }
+
+        header { 
+            background: #464e87; 
+            color: rgb(220, 221, 210); 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+
+        nav { 
+            background: rgb(163, 189, 253); 
+            padding: 15px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            box-shadow: 0 2px 5px rgba(12, 41, 52, 0.1);
+            z-index: 1000;
+        }
+
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: #101f6b; 
+            font-weight: bold; 
+        }
+
+        main { 
+            padding: 20px; 
+            max-width: 800px; 
+            margin: auto; 
+        }
+
+        section { 
+            background: rgb(218, 220, 209); 
+            padding: 30px; 
+            margin-bottom: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+        }
+
+        .item-box {
+            background: #fafafa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        h2 { 
+            color: #2f4361; 
+            border-bottom: 2px solid #8eaadc; 
+            padding-bottom: 10px; 
+            margin-top: 0;
+        }
+
+        img { 
+            border-radius: 50%; 
+            width: 120px; 
+            height: 120px; 
+            display: block;
+            margin: 0 auto 20px auto; 
+            border: 4px solid #120f41;
+        }
+
+        input, select, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin: 8px 0 20px 0; 
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button { 
+            background: #8194f2; 
+            color: white; 
+            border: none; 
+            padding: 12px 25px; 
+            border-radius: 5px;
+            cursor: pointer; 
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover { background: #3b527b; }
+
+        footer { 
+            background: #333; 
+            color: white; 
+            text-align: center; 
+            padding: 30px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Halo, Saya Amara!</h1>
+        <p>Web Developer & Mahasiswa IT</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#pengalaman">Riwayat</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <main>
+        
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <img src="https://i.pinimg.com/736x/27/b3/a2/27b3a20243c6f8dd82e89193fb41edd7.jpg" alt="amara">
+            <div style="text-align: center;">
+                <p><strong>Jurusan:</strong> Teknik Informatika</p>
+                <p><strong>Universitas:</strong> Politeknik Lhokseumawe</p>
+                <p>Saya senang belajar hal baru, terutama dalam teknologi web dan desain antarmuka pengguna.</p>
+            </div>
+        </section>
+
+        <section id="keahlian">
+            <h2>Keahlian</h2>
+            <div class="item-box"><strong>Hard Skills:</strong> HTML, CSS.</div>
+            <div class="item-box"><strong>Soft Skills:</strong> Kerjasama Tim, Komunikasi.</div>
+        </section>
+
+        <section id="pengalaman">
+            <h2>Riwayat Pengalaman</h2>
+            <ol>
+                <li>
+                    <div class="item-box">
+                        <strong>2024:</strong> Peserta Workshop HTML Dasar.
+                    </div>
+                </li>
+                <li>
+                    <div class="item-box">
+                        <strong>2023:</strong> Freelance Desain Grafis.
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section id="kontak">
+            <h2>Hubungi Saya</h2>
+            <form>
+                <label>Nama Anda:</label>
+                <input type="text" placeholder="Masukkan nama...">
+                
+                <label>Email:</label>
+                <input type="email" placeholder="nama@email.com">
+
+                <label>Subjek:</label>
+                <select>
+                    <option>Tawaran Proyek</option>
+                    <option>Tanya Sesuatu</option>
+                </select>
+
+                <label>Pesan:</label>
+                <textarea rows="4" placeholder="Tulis pesan..."></textarea>
+
+                <button type="button">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Amara Imanika</p>
+        <p><a href="#" style="color: white; text-decoration: none;">
+            GitHub</a> | <a href="#" style="color: white; text-decoration: none;">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>

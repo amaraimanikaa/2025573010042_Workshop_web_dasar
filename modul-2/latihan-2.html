@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Restoran Lezat</title>
+    <style>             
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #dde2f0;
+    color: #302e2e;
+}
+
+header {
+    background-color: #475b71;
+    color: rgb(214, 234, 191);
+    text-align: center;
+    padding: 40px 20px;
+    border: none;
+}
+
+nav {
+    background: #d2e6eb;
+    text-align: center;
+    padding: 15px;
+    position: sticky; 
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border: none;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2a343a; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #7f8dd3;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+}
+
+section {
+    margin-bottom: 50px;
+    border: none;
+}
+
+section h2 {
+    border-bottom: 3px solid #778f7e;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #2c3e50;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+section h2 {
+    width: 100%; 
+}
+
+article {
+    flex: 1 1 calc(45% - 20px); 
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-left: none; 
+}
+
+article:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 50%; 
+    height: 180px;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+article h3 {
+    margin: 15px 0 10px;
+    color: #76803b;
+}
+
+article p strong {
+    font-size: 1.2em;
+    color: #1d7642; 
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border: none;
+}
+
+footer a {
+    color: #e6e65f;
+}
+
+@media (max-width: 600px) {
+    article {
+        flex: 1 1 100%; 
+    }
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Restoran Rasa Nusantara</h1>
+        <p>Menyajikan kebahagiaan di setiap piring.</p>
+    </header>
+
+    <nav>
+        <a href="#makanan">Makanan</a>
+        <a href="#minuman">Minuman</a>
+        <a href="#dessert">Dessert</a>
+    </nav>
+
+    <main>
+
+        <section id="makanan">
+            <h2>Kategori: Makanan</h2>
+            <article>
+                <h3>Sate Ayam</h3>
+                <img src="sate ayam.jpg" alt="Sate Ayam" width="90" height="100">
+                <p>Sate ayam bumbu kacang yang gurih.</p>
+                <p><strong>Harga: Rp 30.000</strong></p>
+            </article>
+            <article>
+                <h3>Gado-Gado</h3>
+                <img src="gado gado.jpg" alt="Gado-gado" width="200" height="120">
+                <p>Sayuran segar dengan siraman saus kacang.</p>
+                <p><strong>Harga: Rp 20.000</strong></p>
+            </article>
+        </section>
+
+        <section id="minuman">
+            <h2>Kategori: Minuman</h2>
+            <article>
+                <h3>Es Teh Manis</h3>
+                <img src="es teh manis.jpg" alt="Es Teh" width="200" height="120">
+                <p>Segarnya teh asli pilihan.</p>
+                <p><strong>Harga: Rp 5.000</strong></p>
+            </article>
+            <article>
+                <h3>Kopi Susu</h3>
+                <img src="kopi susu.jpg" alt="Kopi" width="200" height="120">
+                <p>Perpaduan kopi robusta dan susu manis.</p>
+                <p><strong>Harga: Rp 12.000</strong></p>
+            </article>
+        </section>
+
+        <section id="dessert">
+            <h2>Kategori: Dessert</h2>
+            <article>
+                <h3>Pudding Cokelat</h3>
+                <img src="puding vla vanilla.jpg" alt="Pudding" width="200" height="120">
+                <p>Pudding lembut dengan vla vanilla.</p>
+                <p><strong>Harga: Rp 10.000</strong></p>
+            </article>
+            <article>
+                <h3>Es Krim Scoop</h3>
+                <img src="ice cream .jpg" alt="Es Krim" width="200" height="120">
+                <p>Tiga pilihan rasa: Cokelat, Vanila, Stroberi.</p>
+                <p><strong>Harga: Rp 18.000</strong></p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><strong>Informasi Restoran:</strong></p>
+        <p>Jam Buka: 10:00 - 22:00 WIB</p>
+        <p>Alamat: Jl. Kuliner No. 123, Jakarta</p>
+        <p>Telepon: <a href="tel:0211234567">021-1234567</a></p>
+    </footer>
+
+</body>
+</html>
