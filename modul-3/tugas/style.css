@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #6565c1; /* Ungu sesuai header soal */
+    --secondary-color: #fdf0ff;
+    --accent-color: #c3bb8f;
+    --dark-color: #556a72;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    background-color: #faffed;
+    color: var(--dark-color);
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), #8e24aa);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e4ceff;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: rgb(72, 76, 102);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.tentang-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tentang-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+}
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background-color: var(--primary-color);
+    color: rgb(190, 208, 245);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: rgb(221, 252, 253);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #ab9ebc;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: rgb(183, 224, 255);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 40px;
+}
