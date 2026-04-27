@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  /* Tombol Utama Pastel */
+  .btn-utama {
+    @apply inline-block px-10 py-4 bg-gradient-to-r from-rose-200 via-purple-200 to-blue-200 
+           text-gray-700 rounded-full font-bold tracking-wide shadow-md 
+           hover:shadow-rose-200/50 hover:-translate-y-1 active:scale-95 
+           transition-all duration-500 uppercase text-xs;
+  }
+
+  /* Kartu Galeri yang Lembut */
+  .kartu-fitur {
+    @apply bg-white dark:bg-gray-800 rounded-[2.5rem] overflow-hidden 
+           border-none shadow-[0_20px_50px_rgba(0,0,0,0.05)] dark:shadow-none 
+           hover:scale-[1.03] transition-all duration-700;
+  }
+
+  /* Input Form Pastel */
+  .input-field {
+    @apply w-full px-6 py-4 bg-purple-50/50 dark:bg-gray-900 border-none 
+           rounded-2xl focus:ring-2 focus:ring-rose-200 outline-none 
+           transition-all duration-300 dark:text-white shadow-sm;
+  }
+
+  /* Link Navigasi */
+  .nav-link {
+    @apply text-gray-400 dark:text-gray-500 hover:text-rose-400 
+           dark:hover:text-rose-300 font-semibold transition-colors duration-300 text-sm tracking-widest;
+  }
+}
+
+/* Background Estetik */
+body {
+  @apply antialiased;
+  background: linear-gradient(135deg, #fff5f5 0%, #f5f3ff 50%, #f0fdfa 100%);
+}
+
+.dark body {
+  background: #111827;
+}
+html {
+  scroll-behavior: smooth;
+}
