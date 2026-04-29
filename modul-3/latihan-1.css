@@ -27,7 +27,7 @@ h2 {
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Transisi halus untuk hover */
+    transition: all 0.3s ease;
     margin-right: 5px;
 }
 
@@ -48,7 +48,7 @@ h2 {
 .badge {
     padding: 4px 12px;
     font-size: 12px;
-    border-radius: 20px; /* Membuat bentuk pil/capsule */
+    border-radius: 20px; 
     color: white;
     font-weight: 600;
     margin-right: 5px;
