@@ -1,0 +1,154 @@
+:root {
+  --bg: #fdf6f0;
+  --card: #ffffff;
+  --primary: #ffdde1; /* Pink pastel */
+  --secondary: #e0f1f6; /* Biru pastel */
+  --accent: #ccf2dc; /* Hijau pastel */
+  --text: #7d7362;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app-container {
+  background: var(--card);
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+  padding: 12px;
+  border: 2px solid var(--secondary);
+  border-radius: 12px;
+  outline: none;
+}
+
+#todo-input {
+  flex: 1;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: 0.2s;
+  font-weight: 600;
+  color: var(--text);
+}
+
+#add-btn {
+  background: var(--primary);
+  padding: 0 20px;
+}
+#add-btn:hover {
+  background: #ffc2c9;
+}
+
+#error-msg {
+  color: #f44336;
+  font-size: 0.8rem;
+  height: 1rem;
+  margin-bottom: 15px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background: var(--secondary);
+  padding: 5px 12px;
+  font-size: 0.85rem;
+}
+.filter-btn.active {
+  background: var(--primary);
+}
+
+#clear-completed {
+  background: #eee;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Item List */
+.todo-item {
+  background: #fafafa;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: grab;
+  border-left: 5px solid transparent;
+}
+
+.todo-item.rendah {
+  border-color: var(--accent);
+}
+.todo-item.sedang {
+  border-color: var(--secondary);
+}
+.todo-item.tinggi {
+  border-color: var(--primary);
+}
+
+.todo-item.completed {
+  opacity: 0.6;
+}
+.todo-item.completed span {
+  text-decoration: line-through;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+}
+
+.delete-btn {
+  background: none;
+  font-size: 1.2rem;
+}
+
+/* Drag & Drop Styles */
+.todo-item.dragging {
+  opacity: 0.5;
+  background: #eee;
+}
+
+

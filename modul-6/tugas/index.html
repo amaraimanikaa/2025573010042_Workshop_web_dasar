@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pastel Todo List ✨</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>My Daily Notes 🌸</h1>
+        <div class="input-group">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Tulis tugas baru (min. 3 karakter)..."
+          />
+          <select id="priority-select">
+            <option value="rendah">Low ☁️</option>
+            <option value="sedang" selected>Mid 🧸</option>
+            <option value="tinggi">High 🔥</option>
+          </select>
+          <button id="add-btn">Tambah</button>
+        </div>
+        <p id="error-msg"></p>
+      </header>
+
+      <div class="controls">
+        <div class="filters">
+          <button class="filter-btn active" data-filter="semua">Semua</button>
+          <button class="filter-btn" data-filter="aktif">Aktif</button>
+          <button class="filter-btn" data-filter="selesai">Selesai</button>
+        </div>
+        <button id="clear-completed">Hapus Selesai 🧹</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+
+      <footer>
+        <span id="items-left">0 tugas tersisa</span>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

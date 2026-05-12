@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melody Pastel - Toko Kaset Kekinian</title>
+    <style>
+      :root {
+        --pink-soft: #ffdde1;
+        --blue-soft: #e0f1f6;
+        --green-soft: #ccf2dc;
+        --yellow-soft: #ffedcc;
+        --text-color: #6d6d6d;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #fcf8f0;
+        color: var(--text-color);
+        margin: 0;
+        padding: 20px;
+      }
+
+      header {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .badge-icon {
+        background: var(--pink-soft);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      /* 2. Daftar Produk */
+      .product-list {
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 20px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 15px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+      }
+
+      .card h3 {
+        margin: 10px 0 5px;
+        font-size: 1.1rem;
+      }
+      .card p {
+        color: #a1a1a1;
+        font-weight: bold;
+      }
+
+      /* 3. Keranjang Belanja */
+      .cart-section {
+        flex: 1;
+        background: white;
+        border-radius: 20px;
+        padding: 20px;
+        min-width: 300px;
+        height: fit-content;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+      }
+
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed var(--blue-soft);
+        padding: 10px 0;
+      }
+
+      .btn-add {
+        background-color: var(--blue-soft);
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;
+        font-weight: bold;
+        color: #608691;
+      }
+
+      .btn-qty {
+        background: var(--yellow-soft);
+        border: none;
+        padding: 2px 8px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .btn-del {
+        background: var(--pink-soft);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+
+      .checkout-btn {
+        background-color: var(--green-soft);
+        width: 100%;
+        border: none;
+        padding: 15px;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        color: #5e9c7a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>💿 Melody Pastel Music</h1>
+      <p>
+        Koleksi Kaset Ter-Hype!
+        <span class="badge-icon">🛒 <span id="cart-count">0</span></span>
+      </p>
+    </header>
+
+    <div class="container">
+      <div class="product-list" id="product-container"></div>
+
+      <div class="cart-section">
+        <h3>Keranjang Belanja</h3>
+        <div id="cart-items"></div>
+        <hr />
+        <p>
+          <strong>Total: Rp <span id="total-price">0</span></strong>
+        </p>
+        <button class="checkout-btn" onclick="checkout()">
+          Checkout Sekarang ✨
+        </button>
+      </div>
+    </div>
+
+    <script src="latihan-2.js"></script>
+  </body>
+</html>
+
+
