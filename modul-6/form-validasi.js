@@ -6,7 +6,7 @@ const inputKonf = document.getElementById("konfirmasi");
 const inputTelp = document.getElementById("telp");
 const inputSetuju = document.getElementById("setuju");
 const sukses = document.getElementById("sukses");
-// ── Helper: tampilkan / sembunyikan error ────────────────────
+
 function setError(inputEl, errorId, pesan) {
   const errorEl = document.getElementById(errorId);
   errorEl.textContent = pesan;
@@ -117,5 +117,3 @@ form.addEventListener("submit", (e) => {
     firstInvalid?.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 });
-
-
